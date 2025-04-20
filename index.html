@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +6,60 @@
     <title>Document</title>
 </head>
 <body>
+
+
+
+    <input type="file"  accept="image/*" onchange="uploadFile(this.files)">
+    <div id="message"></div>
+
+    <img src="" alt="">
+
+
+
+
+
+
     <script src="app.js">
 
     </script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="location">Getting your city...</div>
+
+    <script>
+      window.onload = function () {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showGeoPosition, showError);
+        } else {
+          document.getElementById('location').textContent = "Geolocation not supported.";
+        }
+      };
+    
+      function showGeoPosition(position) {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+    
+        fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}`)
+          .then(response => response.json())
+          .then(data => {
+            const city = data.address.city || data.address.town || data.address.village || "Unknown city";
+            document.getElementById('location').textContent = `You are in ${city}`;
+          })
+          .catch(error => {
+            console.error(error);
+            document.getElementById('location').textContent = "Could not retrieve city.";
+          });
+      }
+    
+      function showError(error) {
+        console.warn(`ERROR(${error.code}): ${error.message}`);
+        document.getElementById('location').textContent = "Unable to retrieve location.";
+      }
+    </script>
+    
+  </body>
 </html>

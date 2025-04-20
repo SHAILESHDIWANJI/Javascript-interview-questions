@@ -203,12 +203,79 @@
 // b(); 
 // console.log(a); 
 
-function curry(base){
-    return function (num){
-        return base+num
-    }
-}
-var result=curry(10)
-console.log(result(10));
+// function curry(base){
+//     return function (num){
+//         return base+num
+//     }
+// }
+// var result=curry(10)
+// console.log(result(10));
 
+
+
+// class student{
+
+//     constructor(name,mobile){
+//         this.name=name,
+//         this.mobile=mobile
+//     }
+//     printDetails(){
+//         console.log(this.name+' '+this.mobile);
+//     }
+// }
+// class product{
+
+//     constructor(name){
+//         this.name=name}
+//     productName(){
+//         console.log(this.name);
+//     }
+// }
+
+// // let stud=new product('shailes','94242')
+// // stud.productName();
+
+// class productDetails extends product  {
+//     constructor(name,price){
+//         super(name)
+//         this.productPrice=price
+//     }
+//     printProductDetails(){
+//         console.log(this.name +" "+ this.productPrice);
+//     }
+// }
+// const mobile=new productDetails('moto','12312')
+// mobile.productName()
+// mobile.printProductDetails()
+
+
+// var men={}
+
+
+// var person=Object.create(men)
+// person.name='shailesh'
+// person.age='25'
+// console.log(person);
+
+// var newMen=new Object()
+// newMen.name='shailesh'
+// console.log(newMen);
+// var newObj={}
+
+
+// function uploadFile(files){
+//     var message=  document.getElementById('message')
+//     console.log(files[0]);
+//     let fr=new FileReader()
+//     fr.onload=function(e){
+//         document.getElementsByTagName('img')[0].src=e.target.result
+//     }
+//     fr.readAsDataURL(files[0])
+
+//     // for(let i=0; i<files.length; i++){
+//     //     console.log(files[i]);
+//     //     fr.onload=f
+//     //     // document.getElementById('message').innerHTML=files[i].name
+//     // }
+// }
 
