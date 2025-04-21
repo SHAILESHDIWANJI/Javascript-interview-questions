@@ -362,10 +362,46 @@
 
 // factorial..........
 
-function factorial(n){
-    if(n==0){
-        return 1
-    }
-    return n* factorial(n-1)
-}
-console.log(factorial(4));
+// function factorial(n){
+//     if(n==0){
+//         return 1
+//     }
+//     return n* factorial(n-1)
+// }
+// console.log(factorial(4));
+
+// 24..........
+// forEach.......
+// const array=['a','b','c']
+// array.forEach((e)=>{
+//     console.log(e);
+// })
+
+// 25.............
+
+// prototypal inheritance....
+
+// function Person(name,age){
+//     this.name=name
+//     this.age=age
+// }
+
+// Person.prototype.greet=function(){
+//     console.log(this.name+ this.age);
+// }
+
+// var p1=new Person('shailesh',25)
+// p1.greet()
+
+// var p2=new Person('ds',24)
+// p2.age='23'
+// p2.greet()
+
+// var p3={name:'sdas',age:'34'}
+// Person.call(p3,'sdfas',34)
+// Object.setPrototypeOf(p3,Person.prototype)
+// p3.greet()
+
+var name='shailesh'
+
+console.log(name.at(2));
