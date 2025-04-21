@@ -213,56 +213,7 @@
 
 
 
-// class student{
-
-//     constructor(name,mobile){
-//         this.name=name,
-//         this.mobile=mobile
-//     }
-//     printDetails(){
-//         console.log(this.name+' '+this.mobile);
-//     }
-// }
-// class product{
-
-//     constructor(name){
-//         this.name=name}
-//     productName(){
-//         console.log(this.name);
-//     }
-// }
-
-// // let stud=new product('shailes','94242')
-// // stud.productName();
-
-// class productDetails extends product  {
-//     constructor(name,price){
-//         super(name)
-//         this.productPrice=price
-//     }
-//     printProductDetails(){
-//         console.log(this.name +" "+ this.productPrice);
-//     }
-// }
-// const mobile=new productDetails('moto','12312')
-// mobile.productName()
-// mobile.printProductDetails()
-
-
-// var men={}
-
-
-// var person=Object.create(men)
-// person.name='shailesh'
-// person.age='25'
-// console.log(person);
-
-// var newMen=new Object()
-// newMen.name='shailesh'
-// console.log(newMen);
-// var newObj={}
-
-
+// 17...........
 // function uploadFile(files){
 //     var message=  document.getElementById('message')
 //     console.log(files[0]);
@@ -279,3 +230,142 @@
 //     // }
 // }
 
+
+// 18.............
+
+// call,apply,bind......................................
+// call......
+// const person={
+//     fullName:function(city){
+//         return this.firstName +' from ' +city
+//     }
+// }
+// const person1={
+//     firstName:'shailesh'
+// }
+
+// console.log(person.fullName.call(person1,'Pune'));
+
+// // apply........
+// const animal={
+//     fullName:function(city,country){
+//         return this.firstName +' from ' +city +' '+country
+//     }
+// }
+// const animal1={
+//     firstName:'sonya'
+// }
+
+// console.log(animal.fullName.apply(animal1,['Pune','india']));
+// // bind.......
+// const dog={
+//     fullName:function(city,country){
+//         return this.firstName +' from ' +city +' '+country
+//     }
+// }
+// const dog1={
+//     firstName:'labra'
+// }
+
+// var newdog=dog.fullName.bind(dog1,'Pune','india');
+
+// console.log(newdog());
+
+
+// // call......
+
+// function greet(words){
+//     console.log(words +' '+this.name);
+// }
+
+// var user1={name:'shailesh'}
+
+// greet.call(user1,'hello')
+// // apply..............
+// function greet1(word1,word2){
+//     console.log(word1 +' '+word2 +' '+this.name);
+// }
+
+// var user1={name:'shailesh'}
+// greet1.apply(user1,['hello','good morning'])
+
+// // bind.....
+
+// var result=greet1.bind(user1,'goodMorning','hello')
+// result()
+
+
+// 19...............................
+// closures.............
+
+// function newFun(){
+//     const name='shailesh';
+//     return function innerFunction(){
+//         console.log(name);
+//     }
+// }
+// var result=newFun()
+// result()
+
+// 20............
+// Higher order function ...............
+
+// const names=['shailesh','ajay','vijay']
+
+// var result=names.map((n)=>n.toUpperCase())
+// console.log(result);
+
+// 21...............
+// let xhr= new XMLHttpRequest()
+
+// xhr.onreadystatechange=function(){
+//     if(xhr.readyState==XMLHttpRequest.DONE){
+//         if(xhr.status==200){
+//             console.log(xhr.responseText);
+//         }else{
+//             console.log('request failed '+ xhr.status);
+//         }
+//     }
+// };
+// xhr.open('GET','https://jsonplaceholder.typicode.com/todos/1',true)
+// xhr.send()
+
+// fetch.............
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+// .then((res)=>{
+//     if(!res.ok){
+//         throw new Error('Network response')
+//     }else{
+//         return res.json()
+//     }
+// }).then((data)=>console.log(data)).catch((err)=>console.log(err))
+
+
+
+// 22...............
+
+// function* printNumber(){
+//     for(let i=0; i<10;i++){
+//       yield  i;
+//     }
+// }
+
+// var gen=printNumber()
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+// gen.next()
+
+
+// 23..............
+
+// factorial..........
+
+function factorial(n){
+    if(n==0){
+        return 1
+    }
+    return n* factorial(n-1)
+}
+console.log(factorial(4));
