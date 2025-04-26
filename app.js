@@ -402,6 +402,49 @@
 // Object.setPrototypeOf(p3,Person.prototype)
 // p3.greet()
 
-var name='shailesh'
+// var name='shailesh'
 
-console.log(name.at(2));
+// console.log(name.at(2));
+
+// 26...........
+// check for required value
+
+
+//   var arr=[1,2,3,5,6]
+//   var count=10
+//   var newArr=[]
+
+//   for(let i=1 ;i<=count; i++){
+//     if(!arr.includes(i)){
+//         newArr.push(i)
+
+//     }
+//   }
+//   console.log(newArr);
+
+
+// 27............
+
+// var str='shailesh_diwaji'
+
+// let arr=str.split('_')
+
+// var result = arr.map((i)=>i.charAt(0).toUpperCase()+i.slice(1))
+// console.log(result.join("_"));
+
+// for(var i=0 ; i<2; i++){
+//     setTimeout(console.log(i), 1000);
+// }
+// console.log('aaa');
+
+// 28 structural clone............
+
+// var obj={
+//     name:'shailesh',
+//     age:'25'
+// }
+// console.log(obj);
+// var newObj=Object.assign({},obj)
+// newObj.name='ds'
+// console.log(newObj);
+// console.log(obj);
