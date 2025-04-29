@@ -12,12 +12,16 @@ import { HightlightDirective } from './shared/hightlight.directive';
     AppComponent,
     ColorBluePipe,
     HightlightDirective
+  
   ],
   imports: [
+  
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [
+
     provideClientHydration()
   ],
   bootstrap: [AppComponent]

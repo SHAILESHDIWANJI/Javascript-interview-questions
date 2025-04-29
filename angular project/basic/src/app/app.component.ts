@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'demo';
-
-  today=new Date()
-
-  searchControl:FormControl=new FormControl('')
+  title = 'basic';
 }
