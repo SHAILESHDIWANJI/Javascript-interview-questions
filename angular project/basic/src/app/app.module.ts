@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
+import { ChangeDetectionComponent } from './change-detection/change-detection.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent
+    FirstComponent,
+    ChangeDetectionComponent
   ],
   imports: [
     FormsModule,

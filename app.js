@@ -448,3 +448,13 @@
 // newObj.name='ds'
 // console.log(newObj);
 // console.log(obj);
+
+//29 filter
+
+var arr=[1,2,3,4,5]
+
+function filterValue(){
+    return arr.map((m)=>m%2==0)
+}
+console.log(filterValue()
+);
