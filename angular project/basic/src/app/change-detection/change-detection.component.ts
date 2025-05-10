@@ -9,7 +9,18 @@ import { map } from 'rxjs';
   // changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class ChangeDetectionComponent implements OnInit{
-  constructor(private http:HttpClient){
+  constructor(private http:HttpClient ){
+
+
+
+
+
+
+
+
+
+
+
     this.http.get('https://fakestoreapi.com/users').subscribe(
       {
         next:(user:any)=>{

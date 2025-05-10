@@ -2,11 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { AfterViewChecked, ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { debounceTime, distinctUntilChanged, filter, switchMap } from 'rxjs';
+import { DemoService } from '../shared/demo.service';
 
 @Component({
   selector: 'app-first',
   templateUrl: './first.component.html',
   styleUrl: './first.component.scss',
+  providers:[DemoService]
   // changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class FirstComponent implements OnInit{
@@ -20,10 +22,12 @@ export class FirstComponent implements OnInit{
     
    console.log('constructore',this.data);
   }
+
   print(){
     console.log('hi');
   }
   ngOnInit(): void {
+
     console.log('hi',this.data);
     // this.searchControl.valueChanges.pipe(
     //   debounceTime(500),

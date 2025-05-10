@@ -451,10 +451,179 @@
 
 //29 filter
 
-var arr=[1,2,3,4,5]
+// var arr=[1,2,3,4,5]
 
-function filterValue(){
-    return arr.map((m)=>m%2==0)
-}
-console.log(filterValue()
-);
+// function filterValue(){
+//     return arr.map((m)=>m%2==0)
+// }
+// console.log(filterValue()
+// );
+
+// function test(){
+//     console.log(a);
+//     console.log(foo());
+
+// var a=1
+// function foo(){
+//     return 2
+// }
+// }
+// test()
+
+
+// function myName(lastName){
+//     console.log(this.firstName+this.middleName+lastName);
+// }
+
+// let obj={firstName:'shailesh ',middleName:'govind'}
+
+// var result=myName.bind(obj,' diwanji')
+// console.log('hi');
+// result()
+
+
+// function Person (firstName,middleName){
+//     this.firstName=firstName
+//     this.middleName=middleName
+// }
+
+// Person.prototype.getFullName=function(lastName){
+//     console.log(this.firstName+this.middleName+lastName);
+// }
+// // Person('shailesh','govind','diwanji')
+
+// var p=new Person('shailesh ','Govind ')
+// p.getFullName('diwanji');
+
+
+// 30
+// fibonaaci.........
+// function fibonacci(n){
+//     var fibo=[0,1]
+
+//     for(let i=2 ;i<n; i++){
+//         fibo[i]=fibo[i-1]+fibo[i-2]
+//     }
+//     console.log(fibo);
+// }
+// var result=fibonacci(5)
+
+
+// function isPrime(n){
+//     var divisor=2
+//     while(n>divisor){
+//         if(n%divisor==0){
+//             return false
+//         }else{
+//             divisor++
+//         }
+//         return true
+//     }
+// }
+
+// var prime=isPrime(10)
+// console.log(10);
+
+// 31..........
+// swap.............
+
+// function swapNumber(a,b){
+//     console.log('before swap:',a,b);
+//     b=b-a
+//     a=a+b
+//     b=a-b
+//     console.log(a,b);
+
+// }
+
+// swapNumber(2,3)
+
+
+// 32.........
+// reverese in place...
+// var str='I am very good boy'
+
+// console.log(str.split(" ").reverse().join(" ").split('').reverse().join(''));
+
+
+// function reverse(str){
+//     var rtnStr=''
+//     for (var i=str.length-1; i>=0;i--){
+//         rtnStr+=str[i]
+//     }
+//     return rtnStr
+// }
+
+// var result=reverse('shailesh diwanji')
+// console.log(result);
+
+
+// 33..................
+// removeDuplicates...........
+
+// const arr=[1,2,3,4,5,6,6,4,3,]
+
+// var newArr=[...new Set(arr)]
+// console.log(newArr );
+
+// var newArr=arr.filter((val,ind)=>arr.indexOf(val)===ind)
+// console.log(newArr);
+
+// rawData = [
+//     { id: 1, name: 'Ram More' },
+//     { id: 2, name: 'Rohit Patil' },
+//     { id: 1, name: 'Rohan Shinde' },
+//     { id: 3, name: 'Atul Bhosale' },
+//     { id: 2, name: 'Shivraj Patil' },
+//   ];
+
+// var uniqueData=rawData.filter((value,index,array)=>
+// index===array.findIndex((item)=>item.id===value.id)
+// )
+// console.log(uniqueData);
+
+// var arr=[1,2,3,4,5,1,2]
+
+// const uniqueArr=arr.reduce((acc,curr)=>{
+//     if(!acc.includes(curr)) acc.push(curr)
+//         return acc
+// },[])
+// console.log(uniqueArr);
+
+// 34........
+// missingNumber...........
+
+// function missingNumber(arr){
+//     var n=arr.length+1
+//     sum=0
+
+//     expectedSum=n*(n+1)/2
+
+//     for(var i=0, len=arr.length; i<len; i++){
+//         sum+=arr[i]
+//     }
+//     return expectedSum-sum
+// }
+
+// var result=missingNumber([5,3,4,1])
+// console.log(result);
+
+// function checkPrime(num){
+//     if( num==1){
+//         return "not Prime"
+//     }
+//     if(num<2){
+//         return "not Valid Number"
+//     }
+//    for( let i=2; i<num-1; i++){
+//    if(num%i==0){
+//     return "Not Prime"
+//    }
+//    }
+//    return "Prime Number"
+// }
+
+
+
+
+
