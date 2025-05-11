@@ -623,6 +623,94 @@
 //    return "Prime Number"
 // }
 
+// ........................
+// interview questions.............
+// var arr=[5,6,7,9]
+
+// function missingNumber(arr){
+ 
+//     for(let i=0; i<arr.length; i++){
+//         console.log(arr[i])
+//         if(arr[i + 1] !== arr[i] + 1){
+//            return arr[i]+1;
+//         }
+//     }
+// }
+// console.log(missingNumber(arr));
+
+// .......................................................
+// var str='Rupali Devadkar'
+// var result=str.split(' ')
+// var result2=result.map((a)=>a.split(''))
+// console.log(result2);
+
+
+// var obj = { a :2, b:{c:2}}
+// obj2.a=3
+// console.log(obj);
+
+// ..................................
+
+
+// setTimeout(() => {
+//     console.log('settimeout');
+// }, 0);
+// var result=new Promise((resolve,reject)=>resolve('promise'))
+// result.then((data)=>console.log(data))
+//     console.log("hello");
+
+//     console.log("world")
+// ........................................
+// var arr=[0,2,4,6,8,12]
+
+// function missingNumber(arr){
+
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i+1]!==arr[i]+2){
+//             return arr[i]+2
+//         }
+//     }
+
+
+// }
+// console.log(missingNumber(arr));
+
+// .......................................
+// Input: "a2b3cd2e10"
+// Output: "aabbbcddeeeeeeeeee"
+
+// var str="a2cb3c10de"
+// // console.log(...str);
+
+// function repeatNumber(str){
+
+//    return str.replace(/([a-zA-Z])(\d*)/g,(total,char,count)=>{
+//     console.log(total,char,count);
+// //    return total
+   
+   
+//     return char.repeat(count ?parseInt(count):1)
+//    })
+
+// }
+// console.log(repeatNumber(str));
+
+// ..........................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
