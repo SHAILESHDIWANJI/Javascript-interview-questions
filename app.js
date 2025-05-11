@@ -697,11 +697,28 @@
 
 // ..........................
 
+// remove duplicate................
+// let arr = [1, 2, 5, 4, 7, 5, 1];
+// // output=[2,4,7]
 
+// var result=arr.filter((x,i,a)=>a.indexOf(x)===a.lastIndexOf(x));
+// var result2=arr.filter((x,i,a)=>a.indexOf(x)===i);
+// console.log(result);
+// console.log(result2);
+// ...................................
 
+// function commonDivisor(a,b){
+//     if(b==0){
+//         return a
+//     }
+//     else{
+//         return commonDivisor(b,a%b)
+//     }
+// }
+// var result=commonDivisor(10,20)
+// console.log(result);
 
-
-
+// ........................
 
 
 
