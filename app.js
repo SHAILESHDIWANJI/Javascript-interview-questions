@@ -747,28 +747,85 @@
 // }
 // console.log(checkPass(password));
 
-let gmail='diwanjishailesh@gmail.com'
+// let gmail='diwanjishailesh@gmail.com'
 
-function checkGmail(gamil){
-    var result=gmail.split('')
-    if(result.includes('@') && result.includes('.')){
-        return true
-    }
-// console.log(result);
-// var result2=gmail.split('.')
-// console.log(result2);
-//     if(result&&result2){
+// function checkGmail(gamil){
+//     var result=gmail.split('')
+//     if(result.includes('@') && result.includes('.')){
+//         return true
+//     }
+// // console.log(result);
+// // var result2=gmail.split('.')
+// // console.log(result2);
+// //     if(result&&result2){
 
       
-//     }else{
-        return false
-//     }
+// //     }else{
+//         return false
+// //     }
 
-}
-console.log(checkGmail(gmail));
-
-
+// }
+// console.log(checkGmail(gmail));
 
 
+
+
+
+
+// str methods................
+
+// var str='shailesh'
+// console.log(str.repeat(3));
+
+// var str='upper roller lower roller'
+// console.log(str.startsWith('upper'));
+// console.log(str.endsWith('roller'));
+
+// var arr=[0,1,2,3,4,5]
+// var first = arr[0].index
+// console.log(first);
+
+// var str='This is a story of boy shailesh. Shailesh and yogesh are best friends. shailesh is very kind'
+// var result=str.match('shailesh')
+// console.log(result);
+// var result2=str.matchAll('shailesh')
+// console.log(Array.from(result2));
+// var result2=str.matchAll(/shailesh/gi)
+// console.log(Array.from(result2));
+// console.log(str.replace(/shailesh/gi,'john'));
+// console.log(str);
+
+// var str='Hello SHAILESH 123'
+// var str='a3b2c10'
+// var regex1=/[a-z]/
+// var regex2=/[A-Z]/
+// var regex3=/[0-9]/
+// console.log(str.search(regex1));
+// console.log(str.search(regex2));
+// console.log(str.search(regex3));
+// console.log(regex1.test(str));
+// console.log(regex2.test(str));
+
+// var str='This is a story of boy shailesh. Shailesh and yogesh are best friends. shailesh is very kind'
+// // console.log(str.substr(0,6));
+// // console.log(str.substr(str.indexOf('boy'),6));
+// console.log(str.substring(31,1));
+
+// var str='500'
+// console.log(str.padStart(str.length+2,
+// 'RS'
+// ));
+// console.log(str.padEnd(str.length+2,
+// 'RS'
+// ));
+
+//  var str='This is a story of boy shailesh. Shailesh and yogesh are best friends. shailesh is very kind'
+//  console.log(str.indexOf('a'));
+//  console.log(str.lastIndexOf('a'));
+
+// var str='This is a story of boy shailesh. Shailesh and yogesh are best friends. shailesh is very kind'
+// console.log(str.charAt(8));
+// console.log(str.charAt(-8));
+// console.log(str.at(-8));
 
 
