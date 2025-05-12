@@ -720,12 +720,52 @@
 
 // ........................
 
+// function reverse(str){
+//     var result=''
+// for(let i=str.length-1; i>=0; i--){
+// result+=str[i]
+// }
+// console.log(result.split(' ').reverse().join(' '));
+
+// }
+
+// reverse('you are a nice dude');
+
+// ..................................
+
+// password='Shailsh!23'
+
+// function checkPass(password){
+
+//     let uppercase=/[A-Z]/.test(password)
+//     let lowercase=/[a-z]/.test(password)
+//     let number=/[0-9]/.test(password)
+
+//     return uppercase && lowercase && number
 
 
+// }
+// console.log(checkPass(password));
 
+let gmail='diwanjishailesh@gmail.com'
 
+function checkGmail(gamil){
+    var result=gmail.split('')
+    if(result.includes('@') && result.includes('.')){
+        return true
+    }
+// console.log(result);
+// var result2=gmail.split('.')
+// console.log(result2);
+//     if(result&&result2){
 
+      
+//     }else{
+        return false
+//     }
 
+}
+console.log(checkGmail(gmail));
 
 
 
